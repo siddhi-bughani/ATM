@@ -1,22 +1,24 @@
 #ifndef WITHDRAW_H
 #define WITHDRAW_H
 
-#include <QWidget>
+#include <QMainWindow>
+#include "account.h"
 
 namespace Ui {
 class withdraw;
 }
 
-class withdraw : public QWidget
+class withdraw : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit withdraw(QWidget *parent = nullptr);
+    explicit withdraw(Account *account, QWidget *parent = nullptr);
     ~withdraw();
 
 private:
     Ui::withdraw *ui;
+    Account *currentAccount;
 };
 
 #endif // WITHDRAW_H

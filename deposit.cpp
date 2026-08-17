@@ -1,9 +1,10 @@
 #include "deposit.h"
 #include "ui_deposit.h"
 
-deposit::deposit(QWidget *parent)
-    : QWidget(parent)
+deposit::deposit(Account *account, QWidget *parent)
+    : QMainWindow(parent)
     , ui(new Ui::deposit)
+    , currentAccount(account)
 {
     ui->setupUi(this);
 }

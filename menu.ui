@@ -138,7 +138,7 @@ QPushButton:pressed {
     <string>WITHDRAW</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="exit">
    <property name="geometry">
     <rect>
      <x>320</x>

@@ -1,22 +1,24 @@
 #ifndef DEPOSIT_H
 #define DEPOSIT_H
 
-#include <QWidget>
+#include <QMainWindow>
+#include "account.h"
 
 namespace Ui {
 class deposit;
 }
 
-class deposit : public QWidget
+class deposit : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit deposit(QWidget *parent = nullptr);
+    explicit deposit(Account *account, QWidget *parent = nullptr);
     ~deposit();
 
 private:
     Ui::deposit *ui;
+    Account *currentAccount;
 };
 
 #endif // DEPOSIT_H

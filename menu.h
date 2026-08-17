@@ -1,9 +1,10 @@
-
 #ifndef MENU_H
 #define MENU_H
 
 #include <QMainWindow>
 #include "account.h"
+
+class MainWindow;
 
 namespace Ui {
 class menu;
@@ -14,12 +15,20 @@ class menu : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit menu(Account *account, QWidget *parent = nullptr);
+    explicit menu(Account *account, MainWindow *loginWindow,
+                  QWidget *parent = nullptr);
     ~menu();
+
+private slots:
+    void on_view_clicked();
+    void on_deposit_clicked();
+    void on_withdraw_clicked();
+    void on_exit_clicked();
 
 private:
     Ui::menu *ui;
     Account *currentAccount;
+    MainWindow *loginWindow;
 };
 
 #endif // MENU_H

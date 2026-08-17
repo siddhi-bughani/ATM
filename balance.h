@@ -1,22 +1,24 @@
 #ifndef BALANCE_H
 #define BALANCE_H
 
-#include <QWidget>
+#include <QMainWindow>
+#include "account.h"
 
 namespace Ui {
 class balance;
 }
 
-class balance : public QWidget
+class balance : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit balance(QWidget *parent = nullptr);
+    explicit balance(Account *account, QWidget *parent = nullptr);
     ~balance();
 
 private:
     Ui::balance *ui;
+    Account *currentAccount;
 };
 
 #endif // BALANCE_H
