@@ -10,11 +10,13 @@ private:
     QString username;
     int pin;
     double balance;
+
 public:
     Account(int id, QString name, int pin, double balance);
 
     int getUserId();
     QString getUsername();
+    int getPin();
     bool checkPin(int enteredPin);
     double getBalance();
 

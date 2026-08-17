@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #F3E8D0;
+}</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -22,11 +27,22 @@
      <height>101</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00A86B;
+    font-size: 28px;
+    font-weight: bold;
+text-align:center;
+}</string>
+   </property>
    <property name="text">
-    <string>enter deposit money</string>
+    <string>Enter Deposit Money</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="depositbutton">
    <property name="geometry">
     <rect>
      <x>420</x>
@@ -54,6 +70,22 @@ QPushButton:pressed {
    </property>
    <property name="text">
     <string>deposit</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="depositmoney">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>260</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+color:black;
+font-size:24px;
+}</string>
    </property>
   </widget>
  </widget>

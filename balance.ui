@@ -13,50 +13,84 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #F3E8D0;
+}</string>
+  </property>
+  <widget class="QLabel" name="ok">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>150</y>
-     <width>191</width>
+     <x>430</x>
+     <y>100</y>
+     <width>221</width>
      <height>51</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00A86B;
+    font-size: 28px;
+    font-weight: bold;
+text-align:center;
+}</string>
+   </property>
    <property name="text">
     <string>ATM BALANCE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>410</x>
      <y>210</y>
-     <width>261</width>
-     <height>51</height>
+     <width>321</width>
+     <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00A86B;
+    font-size: 20px;
+    font-weight: bold;
+text-align:center;
+}</string>
+   </property>
    <property name="text">
-    <string>YOUR CURRENT BALANCE IS</string>
+    <string>YOUR CURRENT BALANCE</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>310</y>
-     <width>63</width>
-     <height>20</height>
+     <x>390</x>
+     <y>290</y>
+     <width>321</width>
+     <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color:black;
+font-size:24px
+
+}</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="back">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>370</y>
+     <x>490</x>
+     <y>360</y>
      <width>121</width>
      <height>51</height>
     </rect>

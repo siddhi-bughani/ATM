@@ -1,11 +1,11 @@
 #include "account.h"
 
-Account::Account(int id, QString name, int pin, double balance) {
+Account::Account(int id, QString name, int pin, double balance)
+{
     this->userId = id;
     this->username = name;
     this->pin = pin;
     this->balance = balance;
-
 }
 
 int Account::getUserId()
@@ -16,6 +16,11 @@ int Account::getUserId()
 QString Account::getUsername()
 {
     return username;
+}
+
+int Account::getPin()
+{
+    return pin;
 }
 
 bool Account::checkPin(int enteredPin)
@@ -35,6 +40,7 @@ void Account::deposit(double amount)
         balance += amount;
     }
 }
+
 bool Account::withdraw(double amount)
 {
     if (amount > 0 && amount <= balance)

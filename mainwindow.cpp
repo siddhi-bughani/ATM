@@ -31,7 +31,7 @@ void MainWindow::on_login_clicked()
 
     if (currentAccount != nullptr)
     {
-        menu *menuWindow = new menu(currentAccount, this);
+        menu *menuWindow = new menu(currentAccount, &accountManager, this);
         menuWindow->show();
 
         this->hide();

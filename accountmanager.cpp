@@ -1,13 +1,8 @@
-#include <QDir>
-#include <QDebug>
-
-
-
-
-
 #include "accountmanager.h"
 #include <QFile>
 #include <QTextStream>
+#include <QDebug>
+#include <QDir>
 
 AccountManager::AccountManager()
 {
@@ -38,6 +33,29 @@ void AccountManager::loadAccounts()
 
         Account account(id, name, pin, balance);
         accounts.append(account);
+    }
+
+    file.close();
+}
+void AccountManager::saveAccounts()
+{
+    QFile file("accounts.txt");
+
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    {
+        qDebug() << "Could not save accounts.txt";
+        qDebug() << "Looking in:" << QDir::currentPath();
+        return;
+    }
+
+    QTextStream out(&file);
+
+    for (Account &account : accounts)
+    {
+        out << account.getUserId() << " "
+            << account.getUsername() << " "
+            << account.getPin() << " "
+            << account.getBalance() << "\n";
     }
 
     file.close();

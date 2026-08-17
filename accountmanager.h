@@ -1,3 +1,4 @@
+
 #ifndef ACCOUNTMANAGER_H
 #define ACCOUNTMANAGER_H
 
@@ -14,6 +15,8 @@ public:
     AccountManager();
 
     void loadAccounts();
+    void saveAccounts();
+
     Account* authenticate(int userId, int pin);
 };
 

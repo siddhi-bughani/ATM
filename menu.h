@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "account.h"
+#include "accountmanager.h"
 
 class MainWindow;
 
@@ -15,8 +16,11 @@ class menu : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit menu(Account *account, MainWindow *loginWindow,
+    explicit menu(Account *account,
+                  AccountManager *accountManager,
+                  MainWindow *loginWindow,
                   QWidget *parent = nullptr);
+
     ~menu();
 
 private slots:
@@ -27,7 +31,9 @@ private slots:
 
 private:
     Ui::menu *ui;
+
     Account *currentAccount;
+    AccountManager *accountManager;
     MainWindow *loginWindow;
 };
 
