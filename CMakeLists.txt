@@ -11,10 +11,14 @@ qt_add_executable(ATM
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
-    atmmenu.h atmmenu.cpp atmmenu.ui
+
     balance.h balance.cpp balance.ui
     withdraw.h withdraw.cpp withdraw.ui
     deposit.h deposit.cpp deposit.ui
+    account.h account.cpp
+    menu.h menu.cpp menu.ui
+    accountmanager.h accountmanager.cpp
+
 
 )
 

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menu</class>
+ <widget class="QWidget" name="menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>783</width>
+    <height>653</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #F3E8D0;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>20</y>
+     <width>681</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00A86B;
+    font-size: 28px;
+    font-weight: bold;
+text-align:center;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="view">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>150</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #00A86B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: red;
+}
+
+QPushButton:pressed {
+    background-color: rgb(51, 175, 43);
+}</string>
+   </property>
+   <property name="text">
+    <string>VIEW BALANCE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deposit">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>230</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #00A86B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: red;
+}
+
+QPushButton:pressed {
+    background-color: rgb(51, 175, 43);
+}</string>
+   </property>
+   <property name="text">
+    <string>DEPOSIT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="withdraw">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>310</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #00A86B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: red;
+}
+
+QPushButton:pressed {
+    background-color: rgb(51, 175, 43);
+}</string>
+   </property>
+   <property name="text">
+    <string>WITHDRAW</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>390</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #00A86B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: red;
+}
+
+QPushButton:pressed {
+    background-color: rgb(51, 175, 43);
+}</string>
+   </property>
+   <property name="text">
+    <string>EXIT</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
