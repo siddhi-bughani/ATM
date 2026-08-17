@@ -21,40 +21,60 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>140</y>
-     <width>211</width>
-     <height>71</height>
+     <x>320</x>
+     <y>220</y>
+     <width>421</width>
+     <height>51</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00A86B;
+    font-size: 28px;
+    font-weight: bold;
+}</string>
+   </property>
    <property name="text">
-    <string>withdrawal ammount</string>
+    <string>Enter Withdrawal Amount</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>270</y>
+     <x>190</x>
+     <y>130</y>
      <width>63</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>330</y>
-     <width>161</width>
-     <height>51</height>
+     <x>390</x>
+     <y>90</y>
+     <width>271</width>
+     <height>81</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00A86B;
+    font-size: 30px;
+    font-weight: bold;
+}</string>
+   </property>
    <property name="text">
-    <string>available balance</string>
+    <string>WITHDRAW</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -68,6 +88,54 @@
    </property>
    <property name="text">
     <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="withdrawbutton">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>400</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #00A86B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: red;
+}
+
+QPushButton:pressed {
+    background-color: rgb(51, 175, 43);
+}</string>
+   </property>
+   <property name="text">
+    <string>WITHDRAW</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="withdrawmoney">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>330</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+color:black;
+font-size:24px;
+}</string>
    </property>
   </widget>
  </widget>

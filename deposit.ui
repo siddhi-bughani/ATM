@@ -32,7 +32,7 @@
     color: #00A86B;
     font-size: 28px;
     font-weight: bold;
-text-align:center;
+
 }</string>
    </property>
    <property name="text">
@@ -57,15 +57,17 @@ text-align:center;
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 12px;
-    font-size: 15px;
+    padding: 12px 35px;
+    font-size: 16px;
     font-weight: bold;
-}QPushButton:hover {
-    background-color: #008F5B;
+}
+
+QPushButton:hover {
+    background-color: red;
 }
 
 QPushButton:pressed {
-    background-color: #007A4D;
+    background-color: rgb(51, 175, 43);
 }</string>
    </property>
    <property name="text">

@@ -41,10 +41,11 @@ void menu::on_deposit_clicked()
     depositWindow->show();
 }
 
+
 void menu::on_withdraw_clicked()
 {
     withdraw *withdrawWindow =
-        new withdraw(currentAccount);
+        new withdraw(currentAccount, accountManager);
 
     withdrawWindow->show();
 }
