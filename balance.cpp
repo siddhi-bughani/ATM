@@ -10,7 +10,8 @@ balance::balance(Account *account, QWidget *parent)
     ui->setupUi(this);
 
     ui->label->setText(
-        "Balance: ₹" + QString::number(currentAccount->getBalance())
+        "Balance: ₹" +
+        QString::number(currentAccount->getBalance(), 'f', 2)
         );
 }
 

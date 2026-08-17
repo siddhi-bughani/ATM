@@ -46,6 +46,12 @@ bool Account::withdraw(double amount)
     if (amount > 0 && amount <= balance)
     {
         balance -= amount;
+
+        if (balance < 0.01)
+        {
+            balance = 0;
+        }
+
         return true;
     }
 

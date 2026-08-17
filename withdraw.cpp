@@ -34,11 +34,17 @@ void withdraw::on_withdrawbutton_clicked()
 
     if (amount > currentAccount->getBalance())
     {
-        QMessageBox::warning(
-            this,
-            "Insufficient Balance",
-            "You do not have enough balance."
+        QMessageBox msgBox(this);
+        msgBox.setWindowTitle("Insufficient Balance");
+        msgBox.setText("You do not have enough balance.");
+
+        msgBox.setStyleSheet(
+            "QMessageBox { color: black; }"
+            "QMessageBox QLabel { color: black; }"
+            "QMessageBox QPushButton { color: black; }"
             );
+
+        msgBox.exec();
         return;
     }
 
